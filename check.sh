@@ -2988,10 +2988,14 @@ function Goodbye(){
 }
 
 clear;
+DNSINFO=$(cat /etc/resolv.conf);
 
 function ScriptTitle(){
 	if [[ "$language" == "e" ]];then
 		echo -e "【Stream Platform & Game Region Restriction Test】";
+		echo ""
+		echo "【Server DNS Info】"
+		echo "$DNSINFO"
 		echo ""
 		echo -e "${Font_Green}Github Repository:${Font_Suffix} ${Font_Yellow} https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}";
 		echo -e "${Font_Green}Telegram Discussion Group:${Font_Suffix} ${Font_Yellow} https://t.me/gameaccelerate ${Font_Suffix}";
