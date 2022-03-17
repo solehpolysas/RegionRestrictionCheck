@@ -2988,13 +2988,13 @@ function Goodbye(){
 }
 
 clear;
-DNSINFO=$(cat /etc/resolv.conf);
 
 function ScriptTitle(){
 	if [[ "$language" == "e" ]];then
 		echo -e "【Stream Platform & Game Region Restriction Test】";
 		echo ""
 		echo "【Server DNS Info】"
+		DNSINFO=$(cat /etc/resolv.conf);
 		echo "$DNSINFO"
 		echo ""
 		echo -e "${Font_Green}Github Repository:${Font_Suffix} ${Font_Yellow} https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}";
