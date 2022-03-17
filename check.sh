@@ -2994,8 +2994,7 @@ function ScriptTitle(){
 		echo -e "【Stream Platform & Game Region Restriction Test】";
 		echo ""
 		echo "【Server DNS Info】"
-		DNSINFO=$(cat /etc/resolv.conf);
-		echo "$DNSINFO"
+		echo "$(cat /etc/resolv.conf)"
 		echo ""
 		echo -e "${Font_Green}Github Repository:${Font_Suffix} ${Font_Yellow} https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}";
 		echo -e "${Font_Green}Telegram Discussion Group:${Font_Suffix} ${Font_Yellow} https://t.me/gameaccelerate ${Font_Suffix}";
@@ -3005,6 +3004,9 @@ function ScriptTitle(){
 		echo ""
 	else
 		echo -e "【流媒体平台及游戏区域限制测试】";
+		echo ""
+		echo "【Server DNS Info】"
+		echo "$(cat /etc/resolv.conf)"
 		echo ""
 		echo -e "${Font_Green}项目地址${Font_Suffix} ${Font_Yellow}https://github.com/lmc999/RegionRestrictionCheck ${Font_Suffix}";
 		echo -e "${Font_Green}BUG反馈或使用交流可加TG群组${Font_Suffix} ${Font_Yellow}https://t.me/gameaccelerate ${Font_Suffix}";
